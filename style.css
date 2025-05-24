@@ -13,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-optical-sizing: auto;
 }
 
 body {
@@ -22,26 +23,24 @@ body {
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .card-container {
   background-color: var(--white);
-  max-width: 350px;
-
+  max-width: 22rem;
+  margin: auto;
   border-radius: 0.5rem;
 }
 
-.card-image img {
+.card-image .mobile-img {
   width: 100%;
-  height: 350px;
-  object-fit: cover;
 
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-#desktop-img {
+.card-image .desktop-img {
   display: none;
 }
 
@@ -113,7 +112,7 @@ body {
 
 .card-button {
   width: 100%;
-  height: 50px;
+  min-height: 50px;
   background-color: var(--green-500);
 
   border-radius: 0.5rem;
@@ -131,7 +130,7 @@ body {
 .card-button-text {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 110%;
   color: var(--white);
 }
@@ -141,12 +140,18 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    max-width: 600px;
-    max-height: 460px;
+    width: 100%;
+    max-width: 37.5rem;
+    height: auto;
   }
 
-  .card-image img {
-    border-top-right-radius: 0px;
+  .card-image .mobile-img {
+    display: none;
+  }
+
+  .card-image .desktop-img {
+    display: block;
+    border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100%;
     height: 100%;
