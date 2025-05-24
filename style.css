@@ -63,7 +63,7 @@ body {
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: 5px;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: var(--grey);
 }
@@ -112,7 +112,7 @@ body {
 
 .card-button {
   width: 100%;
-  min-height: 50px;
+  min-height: 3.125rem;
   background-color: var(--green-500);
 
   border-radius: 0.5rem;
